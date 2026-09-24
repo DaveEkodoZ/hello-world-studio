@@ -127,16 +127,16 @@ function Tag({ children }: { children: ReactNode }) {
 }
 
 const CORE = [
-  { fn: "integrerEquipe()", title: "Merci de m'avoir accueilli", text: "Un immense merci de m'avoir accepté au sein de votre équipe, même si je ne suis actuellement qu'un stagiaire." },
-  { fn: "mentorat.global()", title: "Merci pour vos conseils", text: "Merci pour vos précieux conseils, qu'ils soient sur le plan technique, professionnel, religieux ou sur la vie en général." },
-  { fn: "soin.maternel()", title: "Merci d'être là quand ça ne va pas", text: "Quand je suis souvent souffrant, vous veillez à me donner des soins, des médicaments… Vous êtes une vraie seconde maman pour moi." },
-  { fn: "lancer(opportunite)", title: "Merci pour votre confiance", text: "Merci pour les opportunités et les lancements que vous me confiez régulièrement." },
+  { fn: "integrerEquipe()", title: "Merci de m'avoir accueilli", text: "Je vous suis profondément reconnaissant de m'avoir ouvert les portes de votre équipe, dès mes tout premiers pas de stagiaire." },
+  { fn: "mentorat.global()", title: "Merci pour vos conseils", text: "Merci pour vos conseils précieux, qu'ils portent sur le plan technique, professionnel ou spirituel, comme sur la vie elle-même." },
+  { fn: "soin.maternel()", title: "Merci d'être présente quand tout va mal", text: "Chaque fois que ma santé me fait défaut, vous veillez sur moi avec des soins et une attention qui vont bien au-delà du cadre professionnel. Vous êtes, pour moi, une véritable seconde maman." },
+  { fn: "lancer(opportunite)", title: "Merci pour votre confiance", text: "Merci de me confier, avec une confiance qui m'honore, des missions et des lancements qui me permettent de progresser jour après jour." },
 ];
 
 const STACK = [
-  { key: "API Status", status: "200 OK · uptime 100%", text: "Connexion permanente à votre bienveillance et à vos conseils." },
-  { key: "Protocoles de Sécurité", status: "TLS maternel · actif", text: "Votre soutien maternel et vos soins lors des moments de fatigue ou de maladie." },
-  { key: "Deployments / Lancements", status: "prod · en progression", text: "Les opportunités professionnelles que vous me confiez et qui me permettent de progresser." },
+  { key: "API Status", status: "200 OK · uptime 100%", text: "Une disponibilité constante de votre part, comme un service qui ne connaît aucune interruption." },
+  { key: "Protocoles de Sécurité", status: "TLS maternel · actif", text: "Une protection discrète et attentionnée, active même lorsque la fatigue ou la maladie me fragilisent." },
+  { key: "Deployments / Lancements", status: "prod · en progression", text: "Des opportunités renouvelées qui m'offrent, à chaque étape, la possibilité de grandir et de me dépasser." },
 ];
 
 function Index() {
@@ -168,11 +168,11 @@ function Index() {
           </Reveal>
           <Reveal delay={450}>
             <blockquote className="mx-auto mt-12 max-w-2xl font-display text-xl italic leading-relaxed text-foreground sm:text-2xl">
-              « Vous avez été la première à croire en moi et à me mettre à l'aise lorsque je m'exprime en public. Aujourd'hui, je me débrouille tant bien que mal et il y a une vraie évolution, et c'est en grande partie grâce à vous. »
+              « Vous avez été la première à croire en moi et à me mettre à l'aise dès que je prends la parole en public. Aujourd'hui, je m'en sors tant bien que mal, et je sens une véritable évolution — c'est en grande partie grâce à vous. »
             </blockquote>
           </Reveal>
           <Reveal delay={600}>
-            <p className="mt-14 font-mono text-xs text-muted-foreground">faites défiler pour laisser s'envoler les ballons ↓</p>
+            <p className="mt-14 font-mono text-xs text-muted-foreground">faites défiler, et laissez s'envoler les ballons ↓</p>
           </Reveal>
         </div>
       </section>
@@ -240,7 +240,7 @@ function Index() {
           <Reveal>
             <Tag>04 · Commit Final</Tag>
             <p className="mt-8 font-display text-2xl leading-relaxed text-primary sm:text-3xl">
-              Sachez que vous comptez énormément pour moi. Je vous souhaite un merveilleux anniversaire, rempli de santé, de joies et de réussite.
+              Vous comptez énormément pour moi. Que cette nouvelle année qui s'ouvre à vous soit riche en santé, en joie et en réussite — vous méritez tout cela et bien davantage.
             </p>
             <p className="mt-6 font-display text-3xl italic text-gold sm:text-4xl">Merci pour tout, du fond du cœur.</p>
           </Reveal>
