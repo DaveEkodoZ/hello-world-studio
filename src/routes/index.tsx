@@ -45,7 +45,7 @@ function BalloonLayer() {
         id: idRef.current++,
         left: Math.random() * 95,
         size: 30 + Math.random() * 35,
-        color: BALLOON_COLORS[Math.floor(Math.random() * BALLOON_COLORS.length)],
+        color: BALLOON_COLORS[Math.floor(Math.random() * BALLOON_COLORS.length)]!,
         dur: 7 + Math.random() * 5,
       }));
       setBalloons((b) => [...b.slice(-30), ...fresh]);
@@ -92,7 +92,7 @@ function fireConfetti() {
   const parts = Array.from({ length: 160 }, () => ({
     x: innerWidth / 2, y: innerHeight * 0.6,
     vx: (Math.random() - 0.5) * 16, vy: -Math.random() * 16 - 6,
-    r: Math.random() * 6 + 3, c: colors[Math.floor(Math.random() * colors.length)], a: Math.random() * 6,
+    r: Math.random() * 6 + 3, c: colors[Math.floor(Math.random() * colors.length)]!, a: Math.random() * 6,
   }));
   let t = 0;
   const tick = () => {
@@ -111,7 +111,7 @@ function Reveal({ children, delay = 0, className = "" }: { children: ReactNode; 
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = ref.current!;
-    const io = new IntersectionObserver(([e]) => e.isIntersecting && el.classList.add("in"), { threshold: 0.15 });
+    const io = new IntersectionObserver(([e]) => e?.isIntersecting && el.classList.add("in"), { threshold: 0.15 });
     io.observe(el);
     return () => io.disconnect();
   }, []);
